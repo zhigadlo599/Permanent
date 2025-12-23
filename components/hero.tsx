@@ -17,7 +17,7 @@ export function Hero() {
       {/* Full-page background image */}
       <div className="absolute inset-0">
         <img
-          src="/beautiful-young-woman-close-up-face-with-perfect-e.jpg"
+          src="/young-woman-beautiful-face-permanent-makeup-natura.jpg"
           alt="Перманентний макіяж"
           className="w-full h-full object-cover"
         />
