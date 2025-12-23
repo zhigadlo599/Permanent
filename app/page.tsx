@@ -1,23 +1,21 @@
 import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
 import { Services } from "@/components/services"
-import { Benefits } from "@/components/benefits"
-import { Gallery } from "@/components/gallery"
-import { Process } from "@/components/process"
 import { Pricing } from "@/components/pricing"
+import { About } from "@/components/about"
+import { Gallery } from "@/components/gallery"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-background">
       <Header />
       <Hero />
       <Services />
-      <Benefits />
-      <Gallery />
-      <Process />
       <Pricing />
+      <About />
+      <Gallery />
       <Contact />
       <Footer />
     </main>

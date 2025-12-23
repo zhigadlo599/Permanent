@@ -1,67 +1,62 @@
-import { Instagram, Phone, MapPin } from "lucide-react"
+import Link from "next/link"
+import { Instagram, Phone, MapPin, Heart } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-primary/5 border-t border-border py-12 md:py-16">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8 md:gap-12 mb-8 md:mb-12">
+    <footer className="bg-foreground text-background py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-xl md:text-2xl font-serif font-semibold text-primary mb-3 md:mb-4">Anna Permanent</h3>
-            <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">
-              Перманентний макіяж у Житомирі. Підкресліть свою природну красу.
+            <Link href="/" className="text-2xl font-semibold tracking-wide mb-4 block">
+              Anna<span className="text-primary">.</span>permanent
+            </Link>
+            <p className="text-background/70 text-sm leading-relaxed">
+              Професійний перманентний макіяж у Житомирі. Краса, яка підкреслює вашу індивідуальність.
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-3 md:mb-4 text-sm md:text-base">Послуги</h4>
-            <ul className="space-y-2 text-xs md:text-sm">
-              <li>
-                <a href="#services" className="text-muted-foreground hover:text-primary transition">
-                  Брови
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-muted-foreground hover:text-primary transition">
-                  Губи
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-muted-foreground hover:text-primary transition">
-                  Очі
-                </a>
-              </li>
+            <h3 className="font-semibold mb-4">Послуги</h3>
+            <ul className="space-y-2 text-background/70 text-sm">
+              <li>Перманент брів</li>
+              <li>Перманент губ</li>
+              <li>Перманент стрілок</li>
+              <li>Корекція</li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-3 md:mb-4 text-sm md:text-base">Контакти</h4>
-            <div className="space-y-3">
-              <div className="flex items-start gap-2 text-xs md:text-sm text-muted-foreground">
-                <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>м. Житомир, вул. Михайлівська 45</span>
-              </div>
-              <a
-                href="https://www.instagram.com/anna.permanent_zt"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-xs md:text-sm text-muted-foreground hover:text-primary transition"
-              >
+            <h3 className="font-semibold mb-4">Контакти</h3>
+            <ul className="space-y-3 text-background/70 text-sm">
+              <li className="flex items-center gap-2">
                 <Instagram className="w-4 h-4" />
-                @anna.permanent_zt
-              </a>
-              <a
-                href="tel:+380501234567"
-                className="flex items-center gap-2 text-xs md:text-sm text-muted-foreground hover:text-primary transition"
-              >
+                <a
+                  href="https://instagram.com/anna.permanent_zt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-background transition-colors"
+                >
+                  @anna.permanent_zt
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                +380 (50) 123 45 67
-              </a>
-            </div>
+                <a href="tel:+380639668121" className="hover:text-background transition-colors">
+                  +38 063 966 81 21
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <MapPin className="w-4 h-4" />
+                <span>Житомир, вул. Михайлівська 55</span>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div className="pt-6 md:pt-8 border-t border-border text-center text-xs md:text-sm text-muted-foreground">
-          <p>© 2025 Anna Permanent. Всі права захищені.</p>
+        <div className="border-t border-background/20 pt-8 text-center text-background/50 text-sm">
+          <p className="flex items-center justify-center gap-1">
+            © 2025 Anna Permanent. Створено з <Heart className="w-4 h-4 text-primary fill-primary" /> у Житомирі
+          </p>
         </div>
       </div>
     </footer>

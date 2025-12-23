@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Instagram } from "lucide-react"
 import { useEffect, useState } from "react"
@@ -12,73 +13,98 @@ export function Hero() {
   }, [])
 
   return (
-    <section
-      className="relative flex items-center justify-center overflow-hidden pt-16 md:pt-20"
-      style={{ minHeight: "600px", maxHeight: "700px", height: "100%" }}
-    >
-      <div
-        className="absolute inset-0 w-full h-full"
-        style={{
-          backgroundImage: "url('/trendy-permanent-makeup-hero.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center center",
-          backgroundRepeat: "no-repeat",
-          backgroundAttachment: "fixed",
-          transform: "translateZ(0)",
-          willChange: "auto",
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
+    <section className="relative min-h-screen flex items-center justify-center">
+      {/* Full-page background image */}
+      <div className="absolute inset-0">
+        <img
+          src="/beautiful-young-woman-close-up-face-with-perfect-e.jpg"
+          alt="Перманентний макіяж"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50" />
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="max-w-4xl mx-auto text-center space-y-6 md:space-y-8">
-          <h1
-            className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-light text-balance leading-[1.1] transition-all duration-1000 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-            }`}
-            style={{ transitionDelay: "200ms" }}
-          >
-            Краса, що надихає
-          </h1>
-
+      <div
+        className={`relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full text-center transition-all duration-1000 ease-out ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
+      >
+        <div className="flex flex-col items-center justify-center">
           <p
-            className={`text-lg sm:text-xl md:text-2xl lg:text-3xl text-foreground/80 font-light leading-relaxed text-balance px-4 transition-all duration-1000 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            className={`text-lg sm:text-xl uppercase tracking-[0.3em] text-white/90 mb-4 transition-all duration-1000 delay-200 ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
-            style={{ transitionDelay: "400ms" }}
           >
-            Підкресліть свою природну красу з перманентним макіяжем. Брови, губи, стрілки — ідеальний результат, що
-            тримається роками.
+            Студія перманентного макіяжу
+          </p>
+          <h1
+            className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-light leading-tight text-white mb-6 transition-all duration-1000 delay-300 ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+            }`}
+          >
+            Підкресли свою
+            <span className="block font-semibold italic text-rose-200">природну красу</span>
+          </h1>
+          <p
+            className={`text-xl sm:text-2xl md:text-3xl text-white/80 max-w-2xl mb-10 leading-relaxed transition-all duration-1000 delay-500 ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+            }`}
+          >
+            Професійний перманентний макіяж брів, губ та стрілок у Житомирі
           </p>
 
           <div
-            className={`flex flex-col sm:flex-row gap-4 justify-center items-center pt-4 md:pt-6 transition-all duration-1000 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            className={`flex flex-col sm:flex-row gap-4 justify-center transition-all duration-1000 delay-700 ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
-            style={{ transitionDelay: "600ms" }}
           >
             <Button
+              asChild
               size="lg"
-              className="w-full sm:w-auto text-base md:text-lg px-8 sm:px-10 md:px-12 py-6 sm:py-7 md:py-8 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-              onClick={() => window.open("https://www.instagram.com/anna.permanent_zt", "_blank")}
+              className="bg-white hover:bg-white/90 text-rose-500 rounded-full px-8 py-6 text-xl sm:text-2xl font-medium shadow-xl"
             >
-              <Instagram className="w-5 h-5 mr-2" />
-              Instagram
+              <Link
+                href="https://instagram.com/anna.permanent_zt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <Instagram className="w-6 h-6 sm:w-7 sm:h-7" />
+                Записатися
+              </Link>
             </Button>
             <Button
-              size="lg"
+              asChild
               variant="outline"
-              className="w-full sm:w-auto text-base md:text-lg px-8 sm:px-10 md:px-12 py-6 sm:py-7 md:py-8 rounded-full bg-background/50 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-              onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+              size="lg"
+              className="rounded-full px-8 py-6 text-xl sm:text-2xl border-2 border-white text-white hover:bg-white/20 bg-transparent backdrop-blur-sm"
             >
-              Записатися
+              <Link href="#services">Дізнатися більше</Link>
             </Button>
+          </div>
+
+          <div
+            className={`flex gap-6 mt-12 justify-center transition-all duration-1000 delay-1000 ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+            }`}
+          >
+            <div className="bg-white/20 backdrop-blur-md p-4 sm:p-5 rounded-2xl border border-white/30 text-center">
+              <p className="text-4xl sm:text-5xl md:text-6xl font-semibold text-white">5+</p>
+              <p className="text-base sm:text-lg text-white/80">років досвіду</p>
+            </div>
+            <div className="bg-white/20 backdrop-blur-md p-4 sm:p-5 rounded-2xl border border-white/30 text-center">
+              <p className="text-4xl sm:text-5xl md:text-6xl font-semibold text-white">500+</p>
+              <p className="text-base sm:text-lg text-white/80">задоволених клієнток</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-24 md:h-32 bg-gradient-to-t from-background to-transparent pointer-events-none" />
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
+          <div className="w-1 h-2 bg-white rounded-full" />
+        </div>
+      </div>
     </section>
   )
 }

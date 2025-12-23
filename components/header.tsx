@@ -1,103 +1,86 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
-import { Instagram, Menu, X } from "lucide-react"
 import { useState } from "react"
+import Link from "next/link"
+import { Instagram, Menu, X } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 export function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
+
+  const navItems = [
+    { label: "Послуги", href: "#services" },
+    { label: "Про мене", href: "#about" },
+    { label: "Галерея", href: "#gallery" },
+    { label: "Контакти", href: "#contact" },
+  ]
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20 md:h-24">
-          <div className="text-xl md:text-2xl lg:text-3xl font-serif font-semibold text-primary">Anna Permanent</div>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 md:h-20">
+          <Link href="/" className="text-2xl md:text-3xl font-semibold tracking-wide text-foreground">
+            Anna<span className="text-primary">.</span>permanent
+          </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8 lg:gap-10">
-            <a href="#services" className="text-base lg:text-lg hover:text-primary transition-colors">
-              Послуги
-            </a>
-            <a href="#gallery" className="text-base lg:text-lg hover:text-primary transition-colors">
-              Роботи
-            </a>
-            <a href="#contact" className="text-base lg:text-lg hover:text-primary transition-colors">
-              Контакти
-            </a>
+          <nav className="hidden md:flex items-center gap-8">
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-sm uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors"
+              >
+                {item.label}
+              </Link>
+            ))}
           </nav>
 
-          <div className="flex items-center gap-3 md:gap-4">
-            <Button
-              size="default"
-              variant="outline"
-              className="hidden sm:flex items-center gap-2 bg-transparent text-base"
-              onClick={() => window.open("https://www.instagram.com/anna.permanent_zt", "_blank")}
+          <div className="hidden md:flex items-center gap-4">
+            <Link
+              href="https://instagram.com/anna.permanent_zt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Instagram className="w-5 h-5" />
-              <span className="hidden lg:inline">Instagram</span>
+            </Link>
+            <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6">
+              <Link href="https://instagram.com/anna.permanent_zt" target="_blank" rel="noopener noreferrer">
+                Записатися
+              </Link>
             </Button>
-            <Button
-              size="default"
-              className="hidden md:flex text-base"
-              onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-            >
-              Записатись
-            </Button>
-            <button className="md:hidden p-2" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Меню">
-              {isMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
-            </button>
           </div>
-        </div>
 
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <nav className="md:hidden py-6 space-y-5 border-t border-border animate-in fade-in slide-in-from-top duration-300">
-            <a
-              href="#services"
-              className="block text-lg hover:text-primary transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Послуги
-            </a>
-            <a
-              href="#gallery"
-              className="block text-lg hover:text-primary transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Роботи
-            </a>
-            <a
-              href="#contact"
-              className="block text-lg hover:text-primary transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Контакти
-            </a>
-            <Button
-              size="default"
-              variant="outline"
-              className="w-full bg-transparent text-base"
-              onClick={() => {
-                window.open("https://www.instagram.com/anna.permanent_zt", "_blank")
-                setIsMenuOpen(false)
-              }}
-            >
-              <Instagram className="w-5 h-5 mr-2" />
-              Instagram
-            </Button>
-            <Button
-              size="default"
-              className="w-full text-base"
-              onClick={() => {
-                document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
-                setIsMenuOpen(false)
-              }}
-            >
-              Записатись
+          {/* Mobile Menu Button */}
+          <button className="md:hidden text-foreground" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden bg-background border-b border-border">
+          <nav className="flex flex-col px-4 py-4 gap-4">
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setIsOpen(false)}
+                className="text-sm uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors py-2"
+              >
+                {item.label}
+              </Link>
+            ))}
+            <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full mt-2">
+              <Link href="https://instagram.com/anna.permanent_zt" target="_blank" rel="noopener noreferrer">
+                Записатися
+              </Link>
             </Button>
           </nav>
-        )}
-      </div>
+        </div>
+      )}
     </header>
   )
 }
