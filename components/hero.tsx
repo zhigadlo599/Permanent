@@ -61,13 +61,13 @@ export function Hero() {
             <Button
               asChild
               size="lg"
-              className="bg-red-900 hover:bg-red-800 text-white rounded-full px-8 py-6 text-xl sm:text-2xl font-medium shadow-xl"
+              className="w-full sm:w-80 bg-red-900 hover:bg-red-800 text-white rounded-full px-8 py-6 text-xl sm:text-2xl font-medium shadow-xl"
             >
               <Link
                 href="https://instagram.com/anna.permanent_zt"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2"
+                className="flex items-center gap-2 justify-center"
               >
                 <Instagram className="w-6 h-6 sm:w-7 sm:h-7" />
                 Записатися
@@ -77,9 +77,11 @@ export function Hero() {
               asChild
               variant="outline"
               size="lg"
-              className="rounded-full px-8 py-6 text-xl sm:text-2xl border-2 border-white text-white hover:bg-white/20 bg-transparent backdrop-blur-sm"
+              className="w-full sm:w-80 rounded-full px-8 py-6 text-xl sm:text-2xl border-2 border-white text-white hover:bg-white/20 bg-transparent backdrop-blur-sm"
             >
-              <Link href="#services">Дізнатися більше</Link>
+              <Link href="#services" className="flex items-center justify-center">
+                Дізнатися більше
+              </Link>
             </Button>
           </div>
 
