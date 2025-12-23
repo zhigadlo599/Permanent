@@ -17,7 +17,7 @@ export function Hero() {
       {/* Full-page background image */}
       <div className="absolute inset-0">
         <img
-          src="/young-woman-beautiful-face-permanent-makeup-natura.jpg"
+          src="/woman-eyes-with-beautiful-eyeliner-permanent-makeu.jpg"
           alt="Перманентний макіяж"
           className="w-full h-full object-cover"
         />
@@ -61,7 +61,7 @@ export function Hero() {
             <Button
               asChild
               size="lg"
-              className="bg-white hover:bg-white/90 text-rose-500 rounded-full px-8 py-6 text-xl sm:text-2xl font-medium shadow-xl"
+              className="bg-red-900 hover:bg-red-800 text-white rounded-full px-8 py-6 text-xl sm:text-2xl font-medium shadow-xl"
             >
               <Link
                 href="https://instagram.com/anna.permanent_zt"
@@ -93,7 +93,7 @@ export function Hero() {
               <p className="text-base sm:text-lg text-white/80">років досвіду</p>
             </div>
             <div className="bg-white/20 backdrop-blur-md p-4 sm:p-5 rounded-2xl border border-white/30 text-center">
-              <p className="text-4xl sm:text-5xl md:text-6xl font-semibold text-white">500+</p>
+              <p className="text-4xl sm:text-5xl md:text-6xl font-semibold text-white">2500+</p>
               <p className="text-base sm:text-lg text-white/80">задоволених клієнток</p>
             </div>
           </div>
