@@ -425,6 +425,35 @@
       line-height: 1.5;
     }
   }
+
+  h1 {
+    letter-spacing: -.02em;
+    font-size: clamp(2.25rem, 4.5vw + 1rem, 4.5rem) !important;
+    font-weight: 300 !important;
+    line-height: 1.05 !important;
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 3.2vw + .5rem, 2.5rem) !important;
+    font-weight: 400 !important;
+    line-height: 1.08 !important;
+  }
+
+  h3 {
+    font-size: clamp(1.125rem, 2.2vw + .4rem, 1.5rem) !important;
+    font-weight: 500 !important;
+    line-height: 1.15 !important;
+  }
+
+  p, li, .lead {
+    font-size: clamp(1rem, 1.6vw + .25rem, 1.125rem) !important;
+    line-height: 1.6 !important;
+  }
+
+  .no-scale {
+    font-size: initial !important;
+    line-height: initial !important;
+  }
 }
 
 @layer components;
@@ -1049,6 +1078,10 @@
     }
   }
 
+  .bg-black {
+    background-color: var(--color-black);
+  }
+
   .bg-card {
     background-color: var(--card);
   }
@@ -1238,14 +1271,6 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
-  .bg-cover {
-    background-size: cover;
-  }
-
-  .bg-center {
-    background-position: center;
-  }
-
   .fill-current {
     fill: currentColor;
   }
@@ -1351,6 +1376,11 @@
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+
+  .text-6xl {
+    font-size: var(--text-6xl);
+    line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
 
   .text-base {

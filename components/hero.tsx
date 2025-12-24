@@ -44,14 +44,14 @@ export function Hero() {
       >
         <div className="flex flex-col items-center justify-center">
           <p
-            className={`text-lg sm:text-xl uppercase tracking-[0.3em] text-white/90 mb-4 transition-all duration-1000 delay-200 ${
+            className={`text-xl sm:text-xl uppercase tracking-[0.3em] text-white/90 mb-4 transition-all duration-1000 delay-200 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
             Студія перманентного макіяжу
           </p>
           <h1
-            className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-light leading-tight text-white mb-6 transition-all duration-1000 delay-300 ${
+            className={`text-6xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-light leading-tight text-white mb-6 transition-all duration-1000 delay-300 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
@@ -59,7 +59,7 @@ export function Hero() {
             <span className="block font-semibold italic text-rose-200">природну красу</span>
           </h1>
           <p
-            className={`text-xl sm:text-2xl md:text-3xl text-white/80 max-w-2xl mb-10 leading-relaxed transition-all duration-1000 delay-500 ${
+            className={`text-2xl sm:text-2xl md:text-3xl text-white/80 max-w-2xl mb-10 leading-relaxed transition-all duration-1000 delay-500 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
@@ -74,7 +74,7 @@ export function Hero() {
             <Button
               asChild
               size="lg"
-            className="w-full sm:w-80 bg-red-900 hover:bg-red-800 text-white rounded-full px-8 py-6 text-xl sm:text-2xl font-medium shadow-xl"
+            className="w-full sm:w-80 bg-red-900 hover:bg-red-800 text-white rounded-full px-8 py-6 text-xl sm:text-2xl font-medium shadow-xl no-scale"
             >
               <Link
                 href="https://instagram.com/anna.permanent_zt"
