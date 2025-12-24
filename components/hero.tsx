@@ -18,8 +18,8 @@ export function Hero() {
         <div className="absolute inset-0">
         <video
           src="/hero-background.mp4"
-          poster="/modern-beauty-salon-interior--pink-and-white--eleg.jpg"
           className="w-full h-full object-cover"
+          preload="auto"
           autoPlay
           muted
           loop

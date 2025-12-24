@@ -132,5 +132,13 @@
     html {
       font-size: 18px; /* default is 16px, bump to 18px on small screens */
     }
+    /* Increase paragraph and general block text for readability on mobile */
+    p,
+    .text-base,
+    .text-muted-foreground,
+    .text-foreground {
+      font-size: 1.0625rem; /* ~19px when html font-size is 18px */
+      line-height: 1.5;
+    }
   }
 }
