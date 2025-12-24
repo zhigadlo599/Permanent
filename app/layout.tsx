@@ -29,7 +29,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="uk" className="overflow-x-hidden">
-      <body className={`${cormorant.variable} ${inter.variable} font-sans antialiased overflow-x-hidden`}>
+      <head>
+        <link rel="preload" as="video" href="/hero-background.mp4" />
+      </head>
+      <body className={`${cormorant.variable} ${inter.variable} font-sans antialiased overflow-x-hidden bg-black`}>
         {children}
         <Analytics />
       </body>
