@@ -19,7 +19,6 @@ export function Hero() {
         <video
           className="sm:hidden absolute inset-0 w-full h-full object-cover z-0"
           src="/hero-background.mp4"
-          poster="/hero-creative-enhanced.webp"
           preload="metadata"
           autoPlay
           muted
