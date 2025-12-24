@@ -72,6 +72,8 @@ export function Gallery() {
               <img
                 src={image.src || "/placeholder.svg"}
                 alt={image.alt}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
             </button>
@@ -107,6 +109,8 @@ export function Gallery() {
           <img
             src={selectedImage || "/placeholder.svg"}
             alt="Збільшене зображення"
+            loading="lazy"
+            decoding="async"
             className="max-w-full max-h-[90vh] object-contain rounded-lg"
             onClick={(e) => e.stopPropagation()}
           />

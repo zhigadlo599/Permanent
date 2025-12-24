@@ -105,6 +105,8 @@ export function Contact() {
               <img
                 src="/modern-beauty-salon-interior--pink-and-white--eleg.jpg"
                 alt="Студія перманентного макіяжу"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover"
               />
             </div>
