@@ -450,10 +450,6 @@
     line-height: 1.6 !important;
   }
 
-  html, body, h1, h2, h3, h4, h5, h6, p, li, a, button, input, textarea {
-    font-family: var(--font-inter), system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
-  }
-
   .no-scale {
     font-size: initial !important;
     line-height: initial !important;
