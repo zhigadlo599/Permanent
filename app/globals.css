@@ -127,4 +127,10 @@
     width: 100%;
     max-width: 100vw;
   }
+  /* Increase base font-size on small screens for better readability */
+  @media (max-width: 640px) {
+    html {
+      font-size: 18px; /* default is 16px, bump to 18px on small screens */
+    }
+  }
 }
