@@ -17,8 +17,8 @@ export function Hero() {
       {/* Full-page background image */}
         <div className="absolute inset-0">
         <img
-          src="/hero-creative-enhanced.jpg"
-          alt="Креативний фон — перманентний макіяж"
+          src="/modern-beauty-salon-interior--pink-and-white--eleg.jpg"
+          alt="Фото студії"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50" />
