@@ -15,10 +15,10 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center">
       {/* Full-page background image */}
-      <div className="absolute inset-0">
+        <div className="absolute inset-0">
         <img
-          src="/woman-eyes-with-beautiful-eyeliner-permanent-makeu.jpg"
-          alt="Перманентний макіяж"
+          src="/hero-creative-enhanced.jpg"
+          alt="Креативний фон — перманентний макіяж"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50" />
