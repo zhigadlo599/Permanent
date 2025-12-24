@@ -16,10 +16,14 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center justify-center">
       {/* Full-page background image */}
         <div className="absolute inset-0">
-        <img
-          src="/modern-beauty-salon-interior--pink-and-white--eleg.jpg"
-          alt="Фото студії"
+        <video
+          src="/hero-background.mp4"
+          poster="/modern-beauty-salon-interior--pink-and-white--eleg.jpg"
           className="w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50" />
       </div>
