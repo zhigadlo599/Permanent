@@ -13,9 +13,9 @@ export function Hero() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center">
-      {/* Full-page background image */}
-        <div className="absolute inset-0">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Fixed full-page background video to avoid layout shifts on scroll */}
+      <div className="fixed inset-0 -z-20">
         <video
           src="/hero-background.mp4"
           className="w-full h-full object-cover"
@@ -25,8 +25,8 @@ export function Hero() {
           loop
           playsInline
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50" />
       </div>
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/50 via-black/30 to-black/50" />
 
       <div
         className={`relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full text-center transition-all duration-1000 ease-out ${
