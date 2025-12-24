@@ -161,10 +161,7 @@
     font-size: clamp(1.125rem, 1.8vw + 0.25rem, 1.25rem) !important;
     line-height: 1.6 !important;
   }
-  /* Force a single font family (Inter) across the site for consistent appearance */
-  html, body, h1, h2, h3, h4, h5, h6, p, li, a, button, input, textarea {
-    font-family: var(--font-inter), system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
-  }
+  /* Removed enforced single font override to restore original font behavior */
   /* Small utility to avoid scaling specific call-to-action text */
   .no-scale {
     font-size: initial !important;
