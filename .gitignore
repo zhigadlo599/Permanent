@@ -1,3 +1,5 @@
 node_modules
 # Next.js build output\n.next
 \n# Next.js build output\n.next
+\nnode_modules
+\n.next
