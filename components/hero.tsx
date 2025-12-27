@@ -114,37 +114,47 @@ export function Hero() {
 
       <Reveal>
         <div
-          className={`relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full text-center transition-all duration-1000 ease-out ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
+          className={`relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full text-center ${
+            isVisible
+              ? "sm:opacity-100 sm:translate-y-0 opacity-100 translate-y-0"
+              : "sm:opacity-0 sm:translate-y-8 opacity-100 translate-y-0"
+          } sm:transition-all sm:duration-1000 sm:ease-out`}
         >
           <div className="flex flex-col items-center justify-center">
             <p
-              className={`text-xl sm:text-xl uppercase tracking-[0.3em] text-white/90 mb-4 transition-all duration-1000 delay-200 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              className={`text-xl sm:text-xl uppercase tracking-[0.3em] text-white/90 mb-4 sm:transition-all sm:duration-1000 sm:delay-200 ${
+                isVisible
+                  ? "sm:opacity-100 sm:translate-y-0 opacity-100 translate-y-0"
+                  : "sm:opacity-0 sm:translate-y-4 opacity-100 translate-y-0"
               }`}
             >
               Студія перманентного макіяжу
             </p>
             <h1
-              className={`text-6xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-light leading-tight text-white mb-6 transition-all duration-1000 delay-300 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              className={`text-6xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-light leading-tight text-white mb-6 sm:transition-all sm:duration-1000 sm:delay-300 ${
+                isVisible
+                  ? "sm:opacity-100 sm:translate-y-0 opacity-100 translate-y-0"
+                  : "sm:opacity-0 sm:translate-y-4 opacity-100 translate-y-0"
               }`}
             >
               Підкресли свою
               <span className="block font-semibold italic text-rose-200">природну красу</span>
             </h1>
             <p
-              className={`text-2xl sm:text-2xl md:text-3xl text-white/80 max-w-2xl mb-10 leading-relaxed transition-all duration-1000 delay-500 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              className={`text-2xl sm:text-2xl md:text-3xl text-white/80 max-w-2xl mb-10 leading-relaxed sm:transition-all sm:duration-1000 sm:delay-500 ${
+                isVisible
+                  ? "sm:opacity-100 sm:translate-y-0 opacity-100 translate-y-0"
+                  : "sm:opacity-0 sm:translate-y-4 opacity-100 translate-y-0"
               }`}
             >
               Професійний перманентний макіяж брів, губ та стрілок у Житомирі
             </p>
 
             <div
-              className={`flex flex-col sm:flex-row gap-4 justify-center transition-all duration-1000 delay-700 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              className={`flex flex-col sm:flex-row gap-4 justify-center sm:transition-all sm:duration-1000 sm:delay-700 ${
+                isVisible
+                  ? "sm:opacity-100 sm:translate-y-0 opacity-100 translate-y-0"
+                  : "sm:opacity-0 sm:translate-y-4 opacity-100 translate-y-0"
               }`}
             >
               <Button
@@ -175,8 +185,10 @@ export function Hero() {
             </div>
 
             <div
-              className={`flex gap-6 mt-12 justify-center transition-all duration-1000 delay-1000 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              className={`flex gap-6 mt-12 justify-center sm:transition-all sm:duration-1000 sm:delay-1000 ${
+                isVisible
+                  ? "sm:opacity-100 sm:translate-y-0 opacity-100 translate-y-0"
+                  : "sm:opacity-0 sm:translate-y-4 opacity-100 translate-y-0"
               }`}
             >
               <div className="bg-white/20 backdrop-blur-md p-4 sm:p-5 rounded-2xl border border-white/30 text-center">
