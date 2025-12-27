@@ -93,14 +93,7 @@ export function Pricing() {
                     </li>
                   ))}
                 </ul>
-                <Button
-                  asChild
-                  className={`w-full ${
-                    plan.popular
-                      ? "bg-primary hover:bg-primary/90 text-primary-foreground"
-                      : "bg-secondary hover:bg-secondary/80 text-foreground"
-                  }`}
-                >
+                <Button asChild className="w-full bg-pink-200 hover:bg-pink-300 text-foreground">
                   <a
                     href="https://instagram.com/anna.permanent_zt"
                     target="_blank"

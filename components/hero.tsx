@@ -17,23 +17,25 @@ export function Hero() {
       {/* Background: static image on small devices, video on larger screens */}
       <div className="absolute inset-0 bg-black">
         <video
-          className="sm:hidden absolute inset-0 w-full h-full object-cover z-0 bg-black"
-          src="/hero-background.mp4"
-          preload="metadata"
+          className="sm:hidden absolute inset-0 w-full h-full object-cover z-0 bg-black pointer-events-none"
+          preload="auto"
           autoPlay
           muted
           loop
           playsInline
-        />
+        >
+          <source src="/hero-background.mp4" type="video/mp4" />
+        </video>
         <video
-          src="/hero-background.mp4"
-          className="hidden sm:block absolute inset-0 w-full h-full object-cover z-0 bg-black"
-          preload="metadata"
+          className="hidden sm:block absolute inset-0 w-full h-full object-cover z-0 bg-black pointer-events-none"
+          preload="auto"
           autoPlay
           muted
           loop
           playsInline
-        />
+        >
+          <source src="/hero-background.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50" />
       </div>
 
@@ -74,7 +76,7 @@ export function Hero() {
             <Button
               asChild
               size="lg"
-            className="w-full sm:w-80 bg-red-900 hover:bg-red-800 text-white rounded-full px-8 py-6 text-xl sm:text-2xl font-medium shadow-xl no-scale"
+            className="w-full sm:w-80 bg-pink-200 hover:bg-pink-300 text-foreground rounded-full px-8 py-6 text-xl sm:text-2xl font-medium shadow-xl no-scale"
             >
               <Link
                 href="https://instagram.com/anna.permanent_zt"

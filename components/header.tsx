@@ -45,7 +45,7 @@ export function Header() {
             >
               <Instagram className="w-5 h-5" />
             </Link>
-            <Button asChild className="bg-red-900 hover:bg-red-800 text-white rounded-full px-6">
+            <Button asChild className="bg-pink-200 hover:bg-pink-300 text-foreground rounded-full px-6">
               <Link href="https://instagram.com/anna.permanent_zt" target="_blank" rel="noopener noreferrer">
                 Записатися
               </Link>
@@ -73,7 +73,7 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
-            <Button asChild className="bg-red-900 hover:bg-red-800 text-white rounded-full mt-2">
+            <Button asChild className="bg-pink-200 hover:bg-pink-300 text-foreground rounded-full mt-2">
               <Link href="https://instagram.com/anna.permanent_zt" target="_blank" rel="noopener noreferrer">
                 Записатися
               </Link>
