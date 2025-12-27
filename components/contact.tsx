@@ -73,7 +73,7 @@ export function Contact() {
               <Button
                 asChild
                 size="lg"
-                className="bg-pink-200 hover:bg-pink-300 text-foreground rounded-full px-8 py-6 text-base"
+                className="bg-pink-500/80 hover:bg-pink-500/90 text-white rounded-full px-8 py-6 text-base backdrop-blur-sm"
               >
                 <Link
                   href="https://instagram.com/anna.permanent_zt"
