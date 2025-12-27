@@ -28,7 +28,12 @@ export function Hero() {
           v.setAttribute("playsinline", "")
           // some browsers respond to webkit attribute
           v.setAttribute("webkit-playsinline", "")
-              v.setAttribute("muted", "")
+          v.setAttribute("muted", "")
+        } catch {}
+
+        try {
+          // Ensure the media is requested to load immediately
+          v.load()
         } catch {}
 
         const p = v.play()
