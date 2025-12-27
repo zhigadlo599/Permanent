@@ -18,15 +18,17 @@ export function Hero() {
     const videos = Array.from(document.querySelectorAll<HTMLVideoElement>(".hero-video"))
     const listeners: Array<() => void> = []
 
-    const tryPlayOnce = (v: HTMLVideoElement) => {
+        const tryPlayOnce = (v: HTMLVideoElement) => {
       try {
         // Ensure muted and inline attributes for mobile autoplay
         v.muted = true
+            v.defaultMuted = true
         v.playsInline = true
         try {
           v.setAttribute("playsinline", "")
           // some browsers respond to webkit attribute
           v.setAttribute("webkit-playsinline", "")
+              v.setAttribute("muted", "")
         } catch {}
 
         const p = v.play()
@@ -76,8 +78,11 @@ export function Hero() {
           preload="auto"
           autoPlay
           muted
+          defaultMuted
           loop
           playsInline
+          playsinline=""
+          webkit-playsinline=""
         >
           <source src="/hero-background.mp4" type="video/mp4" />
         </video>
@@ -86,8 +91,11 @@ export function Hero() {
           preload="auto"
           autoPlay
           muted
+          defaultMuted
           loop
           playsInline
+          playsinline=""
+          webkit-playsinline=""
         >
           <source src="/hero-background.mp4" type="video/mp4" />
         </video>
