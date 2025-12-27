@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Sparkles } from "lucide-react"
-import { motion, Variants } from "framer-motion"
+import { ScrollReveal, Reveal } from "@/components/ScrollReveal"
 
 const services = [
   {
@@ -23,19 +23,6 @@ const services = [
 ]
 
 export function Services() {
-  const listVariants: Variants = {
-    hidden: {},
-    visible: {
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  }
-
-  const itemVariants: Variants = {
-    hidden: { opacity: 0, y: 40 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.21, 0.47, 0.32, 0.98] } },
-  }
   return (
     <section id="services" className="py-20 md:py-32 bg-secondary/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -50,16 +37,10 @@ export function Services() {
           </h2>
         </div>
 
-        <motion.div
-          className="grid md:grid-cols-3 gap-8"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={listVariants}
-        >
+        <ScrollReveal className="grid md:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <motion.div key={index} variants={itemVariants}>
-              <Card className="group overflow-hidden border-border bg-card hover:shadow-xl transition-all duration-300">
+            <Reveal key={index} className="group overflow-hidden border-border bg-card hover:shadow-xl transition-all duration-300">
+              <Card className="h-full">
                 <div className="aspect-[3/2] overflow-hidden">
                   <img
                     src={service.image || "/placeholder.svg"}
@@ -74,10 +55,12 @@ export function Services() {
                   <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
                 </CardContent>
               </Card>
-            </motion.div>
+            </Reveal>
           ))}
-        </motion.div>
+        </ScrollReveal>
       </div>
     </section>
   )
 }
+
+

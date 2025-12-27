@@ -1,22 +1,2718 @@
-[00:00:01.426] Server  WARN     ⚠ Minimum recommended TypeScript version is v5.1.0, older versions can potentially be incompatible with Next.js. Detected: 5.0.2
-[00:00:01.699] Server  LOG      ✓ Ready in 1109ms
-[00:00:04.814] Server  LOG      ○ Compiling / ...
-[00:00:07.090] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:07.585] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:07.585] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:07.585] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766849063508}
-[00:00:08.059] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:08.931] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:08.931] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:08.931] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766849064632}
-[00:00:09.928] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:09.928] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:09.928] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766849065089}
-[00:00:30.933] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:31.164] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:31.164] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:31.164] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766849087211}
-[00:00:38.752] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:38.978] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:38.978] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:38.978] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766849095025}
+[00:00:01.186] Server  WARN     ⚠ Minimum recommended TypeScript version is v5.1.0, older versions can potentially be incompatible with Next.js. Detected: 5.0.2
+[00:00:01.409] Server  LOG      ✓ Ready in 917ms
+[00:00:14.933] Server  LOG      ○ Compiling / ...
+[00:00:43.701] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:43.986] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:43.986] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:43.986] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766853949154}
+[00:04:19.554] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:19.556] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:19.611] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:19.613] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:19.617] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:19.619] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:19.625] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:19.627] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:19.631] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:19.633] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:19.635] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:19.637] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:19.639] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:19.641] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:19.646] Server  LOG      ✓ Compiled in 138ms
+[00:04:19.756] Browser ERROR   ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:22.797] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.799] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.801] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.804] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.886] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.887] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.888] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.889] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.894] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.897] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.898] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.900] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.902] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.904] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.905] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.907] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.909] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.910] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.911] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.912] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.913] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.914] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.915] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.916] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.918] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.919] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.920] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.921] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:22.952] Server  LOG      ✓ Compiled in 347ms
+[00:04:23.054] Browser ERROR   ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:23.055] Browser ERROR   ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:25.332] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.334] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.337] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.338] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.340] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.343] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.348] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.352] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.354] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.355] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.356] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.361] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.363] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.365] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.365] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.366] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.367] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.369] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.371] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.372] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.373] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.374] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.375] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.376] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.377] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.378] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.378] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.380] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.380] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.381] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.382] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.383] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.383] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.384] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.385] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.386] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.388] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.389] Server  ERROR    ⨯ ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.391] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.392] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.393] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.394] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:25.396] Server  LOG      ✓ Compiled in 103ms
+[00:04:25.499] Browser ERROR   ./app/page.tsx:9:1
+Module not found: Can't resolve '@/components/ScrollReveal'
+   7 | import { Contact } from "@/components/contact"
+   8 | import { Footer } from "@/components/footer"
+>  9 | import ScrollReveal from "@/components/ScrollReveal"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function Home() {
+  12 |   return (
+
+Import map: aliased to relative './components/ScrollReveal' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:25.499] Browser ERROR   ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:25.499] Browser ERROR   ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:34.703] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.705] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.706] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.708] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.710] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.711] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.712] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.713] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.714] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.716] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.716] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.717] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.718] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.720] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.721] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.722] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.723] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.725] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.726] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.726] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.728] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.729] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.729] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.730] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.861] Browser ERROR   ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:34.861] Browser ERROR   ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:34.951] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.952] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.953] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:34.954] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.018] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.019] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.022] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.025] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.032] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.033] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.035] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.053] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.055] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.056] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.059] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.061] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.063] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.064] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.065] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.067] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.155] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.156] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.158] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.159] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.162] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.162] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.163] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.164] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:35.193] Server  LOG      ✓ Compiled in 339ms
+[00:04:35.298] Browser ERROR   ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:35.298] Browser ERROR   ./app/page.tsx:3:1
+Module not found: Can't resolve '@/components/services'
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+Import map: aliased to relative './components/services' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:46.366] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.367] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.369] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.370] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.372] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.374] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.378] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.379] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.382] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.383] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.407] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.408] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.537] Browser ERROR   ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:46.537] Browser ERROR   ./app/page.tsx:3:1
+Export Services doesn't exist in target module
+  1 | import { Header } from "@/components/header"
+  2 | import { Hero } from "@/components/hero"
+> 3 | import { Services } from "@/components/services"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+  6 | import { Gallery } from "@/components/gallery"
+
+The export Services was not found in module [project]/components/services.tsx [app-rsc] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:04:46.624] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.626] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.704] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.705] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.708] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.710] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.712] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.712] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.714] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.715] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.718] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.719] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.722] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.723] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:46.742] Server  LOG      ✓ Compiled in 138ms
+[00:04:46.844] Browser ERROR   ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/hero'
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+Import map: aliased to relative './components/hero' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:05:16.556] Browser ERROR   ./app/page.tsx:2:1
+Export Hero doesn't exist in target module
+  1 | import { Header } from "@/components/header"
+> 2 | import { Hero } from "@/components/hero"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Services } from "@/components/services"
+  4 | import { Pricing } from "@/components/pricing"
+  5 | import { About } from "@/components/about"
+
+The export Hero was not found in module [project]/components/hero.tsx [app-rsc] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:05:16.877] Server  LOG      ✓ Compiled in 288ms
+[00:05:17.294] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `Home`.
