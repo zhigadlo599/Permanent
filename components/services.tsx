@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Sparkles } from "lucide-react"
-import { ScrollReveal, Reveal } from "@/components/ScrollReveal"
+// No reveal animations for this section per request
 
 const services = [
   {
@@ -37,17 +37,17 @@ export function Services() {
           </h2>
         </div>
 
-        <ScrollReveal className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Reveal key={index} className="group overflow-hidden border-border bg-card hover:shadow-xl transition-all duration-300">
-              <Card className="h-full">
+            <div key={index} className="overflow-hidden border-border bg-card">
+              <Card className="h-full shadow-none">
                 <div className="aspect-[3/2] overflow-hidden">
                   <img
                     src={service.image || "/placeholder.svg"}
                     alt={service.title}
                     loading="lazy"
                     decoding="async"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <CardContent className="p-6">
@@ -55,9 +55,9 @@ export function Services() {
                   <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
                 </CardContent>
               </Card>
-            </Reveal>
+            </div>
           ))}
-        </ScrollReveal>
+        </div>
       </div>
     </section>
   )
