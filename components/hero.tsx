@@ -126,14 +126,14 @@ export function Hero() {
               Студія перманентного макіяжу
             </p>
             <h1
-              className={`text-6xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-light leading-tight text-white mb-6 sm:transition-all sm:duration-1000 sm:delay-300 ${
+              className={`text-6xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-normal leading-tight text-white mb-6 sm:transition-all sm:duration-1000 sm:delay-300 ${
                 isVisible
                   ? "sm:opacity-100 sm:translate-y-0 opacity-100 translate-y-0"
                   : "sm:opacity-0 sm:translate-y-4 opacity-100 translate-y-0"
               }`}
             >
               Підкресли свою
-              <span className="block font-semibold italic text-rose-200">природну красу</span>
+              <span className="block font-normal italic text-rose-200">природну красу</span>
             </h1>
             <p
               className={`text-2xl sm:text-2xl md:text-3xl text-white/80 max-w-2xl mb-10 leading-relaxed sm:transition-all sm:duration-1000 sm:delay-500 ${

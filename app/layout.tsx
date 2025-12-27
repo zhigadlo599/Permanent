@@ -31,6 +31,8 @@ export default function RootLayout({
     <html lang="uk" className="overflow-x-hidden">
       <head>
         <link rel="preload" as="video" href="/hero-background.mp4" type="video/mp4" fetchPriority="high" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       </head>
       <body className={`${cormorant.variable} ${inter.variable} font-sans antialiased overflow-x-hidden bg-black`}>
         {children}
