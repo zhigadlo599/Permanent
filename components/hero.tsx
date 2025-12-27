@@ -34,7 +34,16 @@ export function Hero() {
         const p = v.play()
         if (p && typeof p.catch === "function") {
           p.catch(() => {
-            // ignore, will attempt again on user interaction
+            // If autoplay is blocked, attempt again on the next user interaction
+            const onUserGesture = () => {
+              try {
+                v.play().catch(() => {})
+              } catch {}
+              document.removeEventListener("click", onUserGesture)
+              document.removeEventListener("touchstart", onUserGesture)
+            }
+            document.addEventListener("click", onUserGesture, { once: true })
+            document.addEventListener("touchstart", onUserGesture, { once: true })
           })
         }
       } catch {}
@@ -50,6 +59,10 @@ export function Hero() {
       }
     })
 
+    // Also attempt to play on window load (helps for some mobile browsers)
+    const onLoad = () => videos.forEach((v) => tryPlayOnce(v))
+    window.addEventListener("load", onLoad, { once: true })
+
     // Fallback: attempt to play on first user touch (common mobile restriction)
     const touchHandler = () => {
       videos.forEach((v) => tryPlayOnce(v))
@@ -63,6 +76,9 @@ export function Hero() {
           v.removeEventListener("loadeddata", listeners[i])
         } catch {}
       })
+      try {
+        window.removeEventListener("load", onLoad)
+      } catch {}
       try {
         document.removeEventListener("touchstart", touchHandler)
       } catch {}
