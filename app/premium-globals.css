@@ -1,0 +1,66 @@
+/* Premium brand overrides: fonts, spacing, colors, header blur */
+
+/* Override color variables from main globals */
+:root {
+  --background: #0b0b0b;
+  --foreground: #f6f3f1;
+  --card: #0f0f0f;
+  --card-foreground: #efeae8;
+  --primary: #d4af37;
+  --primary-foreground: #0b0b0b;
+  --secondary: #e9c7b9;
+  --secondary-foreground: #0b0b0b;
+  --border: rgba(255,255,255,0.06);
+  --ring: rgba(212,175,55,0.25);
+  --radius: 0.75rem;
+}
+
+@layer base {
+  /* Fonts: headings serif (Cormorant via next/font), body sans (Inter) */
+  body {
+    font-family: var(--font-inter), system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: var(--foreground);
+    background-color: var(--background);
+  }
+  h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font-cormorant), Georgia, "Times New Roman", serif;
+    color: var(--foreground);
+    letter-spacing: -0.01em;
+    font-weight: 600;
+  }
+
+  /* Header: semi-transparent, backdrop blur, fixed at top */
+  header {
+    background-color: rgba(11,11,11,0.6);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+
+  /* Increase section spacing by ~25% for more 'air' */
+  .py-20 {
+    padding-top: calc(5rem * 1.25) !important;
+    padding-bottom: calc(5rem * 1.25) !important;
+  }
+  @media (min-width: 768px) {
+    .md\\:py-32 {
+      padding-top: calc(8rem * 1.25) !important;
+      padding-bottom: calc(8rem * 1.25) !important;
+    }
+  }
+
+  /* Buttons and accents */
+  .bg-primary {
+    background-color: var(--primary) !important;
+    color: var(--primary-foreground) !important;
+  }
+  .text-primary {
+    color: var(--primary) !important;
+  }
+
+  /* Subtle card background */
+  .bg-card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
+  }
+}
+
+
