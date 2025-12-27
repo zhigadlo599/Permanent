@@ -38,18 +38,8 @@ export function Hero() {
 
         const p = v.play()
         if (p && typeof p.catch === "function") {
-          p.catch(() => {
-            // If autoplay is blocked, attempt again on the next user interaction
-            const onUserGesture = () => {
-              try {
-                v.play().catch(() => {})
-              } catch {}
-              document.removeEventListener("click", onUserGesture)
-              document.removeEventListener("touchstart", onUserGesture)
-            }
-            document.addEventListener("click", onUserGesture, { once: true })
-            document.addEventListener("touchstart", onUserGesture, { once: true })
-          })
+          // swallow play rejection; no user-interaction fallback per request
+          p.catch(() => {})
         }
       } catch {}
     }
@@ -72,12 +62,7 @@ export function Hero() {
     const onLoad = () => videos.forEach((v) => tryPlayOnce(v))
     window.addEventListener("load", onLoad, { once: true })
 
-    // Fallback: attempt to play on first user touch (common mobile restriction)
-    const touchHandler = () => {
-      videos.forEach((v) => tryPlayOnce(v))
-      document.removeEventListener("touchstart", touchHandler)
-    }
-    document.addEventListener("touchstart", touchHandler, { once: true })
+    // No interaction-based fallback: rely on silent video + load()/play() attempts on load
 
     return () => {
       videos.forEach((v, i) => {
@@ -87,9 +72,6 @@ export function Hero() {
       })
       try {
         window.removeEventListener("load", onLoad)
-      } catch {}
-      try {
-        document.removeEventListener("touchstart", touchHandler)
       } catch {}
     }
   }, [])
