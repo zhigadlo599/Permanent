@@ -6,7 +6,7 @@ import { About } from "@/components/about"
 import { Gallery } from "@/components/gallery"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
-import ScrollReveal from "@/components/ScrollReveal"
+import { ScrollReveal } from "@/components/ScrollReveal"
 
 export default function Home() {
   return (
