@@ -79,7 +79,10 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center">
       {/* Background: static image on small devices, video on larger screens */}
-      <div className="absolute inset-0 overflow-hidden bg-black">
+      <div
+        className="absolute inset-0 overflow-hidden"
+        style={{ backgroundImage: "url('/hero-creative-max.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}
+      >
         <video
           className={`hero-video sm:hidden absolute inset-0 w-full h-full object-cover z-0 pointer-events-none transition-opacity duration-700 ${videoLoaded ? "opacity-100" : "opacity-0"}`}
           preload="auto"
@@ -102,7 +105,7 @@ export function Hero() {
         >
           <source src="/hero-background.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50 pointer-events-none" />
       </div>
 
       <div>
