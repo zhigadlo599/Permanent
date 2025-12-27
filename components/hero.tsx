@@ -8,6 +8,7 @@ import { Reveal } from "@/components/ScrollReveal"
 
 export function Hero() {
   const [isVisible, setIsVisible] = useState(false)
+  const [videoLoaded, setVideoLoaded] = useState(false)
 
   useEffect(() => {
     setIsVisible(true)
@@ -81,27 +82,28 @@ export function Hero() {
       {/* Background: static image on small devices, video on larger screens */}
       <div className="absolute inset-0 overflow-hidden bg-black">
         <video
-          className="hero-video sm:hidden absolute inset-0 w-full h-full object-cover z-0 bg-black pointer-events-none"
+          className={`hero-video sm:hidden absolute inset-0 w-full h-full object-cover z-0 pointer-events-none transition-opacity duration-700 ${videoLoaded ? "opacity-100" : "opacity-0"}`}
           preload="auto"
           autoPlay
           muted
           loop
           playsInline
+          onCanPlay={() => setVideoLoaded(true)}
         >
           <source src="/hero-background.mp4" type="video/mp4" />
         </video>
         <video
-          className="hero-video hidden sm:block absolute inset-0 w-full h-full object-cover z-0 bg-black pointer-events-none"
+          className={`hero-video hidden sm:block absolute inset-0 w-full h-full object-cover z-0 pointer-events-none transition-opacity duration-700 ${videoLoaded ? "opacity-100" : "opacity-0"}`}
           preload="auto"
           autoPlay
           muted
           loop
           playsInline
+          onCanPlay={() => setVideoLoaded(true)}
         >
           <source src="/hero-background.mp4" type="video/mp4" />
         </video>
-        {/* No overlay; rely on silent video and autoplay attempts */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60 pointer-events-none" />
       </div>
 
       <Reveal>
