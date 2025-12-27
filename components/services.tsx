@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Sparkles } from "lucide-react"
-// No reveal animations for this section per request
+import { motion } from "framer-motion"
 
 const services = [
   {
@@ -39,15 +39,21 @@ export function Services() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="overflow-hidden border-border bg-card">
-              <Card className="h-full shadow-none">
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: 80 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: index * 0.08, ease: [0.21, 0.47, 0.32, 0.98] }}
+            >
+              <Card className="h-full group overflow-hidden border-border bg-card hover:shadow-xl transition-all duration-300">
                 <div className="aspect-[3/2] overflow-hidden">
                   <img
                     src={service.image || "/placeholder.svg"}
                     alt={service.title}
                     loading="lazy"
                     decoding="async"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <CardContent className="p-6">
@@ -55,7 +61,7 @@ export function Services() {
                   <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
                 </CardContent>
               </Card>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
