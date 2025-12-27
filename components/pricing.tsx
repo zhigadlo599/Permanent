@@ -1,5 +1,6 @@
  "use client"
 
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Check, Star, Instagram } from "lucide-react"
@@ -49,6 +50,7 @@ const pricingPlans = [
 ]
 
 export function Pricing() {
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null)
   return (
     <section id="pricing" className="py-20 md:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -63,17 +65,28 @@ export function Pricing() {
           {pricingPlans.map((plan, index) => (
             <motion.div
               key={index}
+              className="cursor-pointer"
               initial={{ opacity: 0, x: 80 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, delay: index * 0.12, ease: [0.21, 0.47, 0.32, 0.98] }}
+              onClick={() => setSelectedIndex(selectedIndex === index ? null : index)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault()
+                  setSelectedIndex(selectedIndex === index ? null : index)
+                }
+              }}
+              role="button"
+              tabIndex={0}
+              aria-pressed={selectedIndex === index}
             >
               <Card
                 className={`relative overflow-hidden transition-all duration-300 hover:shadow-xl ${
                   plan.popular
-                    ? "border-primary border-2 scale-105 shadow-lg bg-gradient-to-b from-primary/5 to-transparent"
+                    ? "border-primary border-2 shadow-lg bg-gradient-to-b from-primary/5 to-transparent"
                     : "border-border bg-card"
-                }`}
+                } ${selectedIndex === index ? "scale-105 ring-4 ring-primary/30" : ""}`}
               >
               {plan.popular && (
                 <div className="absolute top-0 right-0 bg-primary text-primary-foreground px-4 py-1 text-sm font-medium rounded-bl-lg flex items-center gap-1">
