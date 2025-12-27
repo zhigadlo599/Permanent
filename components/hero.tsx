@@ -1,4 +1,4 @@
- "use client"
+ 'use client';
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -78,7 +78,6 @@ export function Hero() {
           preload="auto"
           autoPlay
           muted
-          defaultMuted
           loop
           playsInline
           playsinline=""
@@ -91,7 +90,6 @@ export function Hero() {
           preload="auto"
           autoPlay
           muted
-          defaultMuted
           loop
           playsInline
           playsinline=""
