@@ -6,18 +6,18 @@ import { About } from "@/components/about"
 import { Gallery } from "@/components/gallery"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
-import Reveal from "@/components/Reveal"
+import ScrollReveal from "@/components/ScrollReveal"
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       <Header />
-      <Reveal><Hero /></Reveal>
-      <Reveal><Services /></Reveal>
-      <Reveal><Pricing /></Reveal>
-      <Reveal><About /></Reveal>
-      <Reveal><Gallery /></Reveal>
-      <Reveal><Contact /></Reveal>
+      <ScrollReveal><Hero /></ScrollReveal>
+      <ScrollReveal><Services /></ScrollReveal>
+      <ScrollReveal><Pricing /></ScrollReveal>
+      <ScrollReveal><About /></ScrollReveal>
+      <ScrollReveal><Gallery /></ScrollReveal>
+      <ScrollReveal><Contact /></ScrollReveal>
       <Footer />
     </main>
   )

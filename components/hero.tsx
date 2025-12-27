@@ -12,12 +12,39 @@ export function Hero() {
     setIsVisible(true)
   }, [])
 
+  // Try to force-play background videos on mobile if blocked
+  useEffect(() => {
+    const videos = Array.from(document.querySelectorAll<HTMLVideoElement>(".hero-video"))
+    const listeners: Array<() => void> = []
+    videos.forEach((v) => {
+      v.muted = true
+      const tryPlay = () => {
+        v.play().catch(() => {
+          /* ignore */
+        })
+      }
+      listeners.push(tryPlay)
+      if (v.readyState >= 2) {
+        tryPlay()
+      } else {
+        v.addEventListener("loadeddata", tryPlay, { once: true })
+      }
+    })
+    return () => {
+      videos.forEach((v, i) => {
+        try {
+          v.removeEventListener("loadeddata", listeners[i])
+        } catch {}
+      })
+    }
+  }, [])
+
   return (
     <section className="relative min-h-screen flex items-center justify-center">
       {/* Background: static image on small devices, video on larger screens */}
-      <div className="absolute inset-0 bg-black">
+      <div className="absolute inset-0 overflow-hidden bg-black">
         <video
-          className="sm:hidden absolute inset-0 w-full h-full object-cover z-0 bg-black pointer-events-none"
+          className="hero-video sm:hidden absolute inset-0 w-full h-full object-cover z-0 bg-black pointer-events-none"
           preload="auto"
           autoPlay
           muted
@@ -27,7 +54,7 @@ export function Hero() {
           <source src="/hero-background.mp4" type="video/mp4" />
         </video>
         <video
-          className="hidden sm:block absolute inset-0 w-full h-full object-cover z-0 bg-black pointer-events-none"
+          className="hero-video hidden sm:block absolute inset-0 w-full h-full object-cover z-0 bg-black pointer-events-none"
           preload="auto"
           autoPlay
           muted
@@ -40,7 +67,7 @@ export function Hero() {
       </div>
 
       <div
-        className={`relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full text-center transition-all duration-1000 ease-out ${
+        className={`relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full text-center transition-all duration-1000 ease-out ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >

@@ -1,5 +1,8 @@
+ "use client"
+
 import { Card, CardContent } from "@/components/ui/card"
 import { Sparkles } from "lucide-react"
+import { motion, Variants } from "framer-motion"
 
 const services = [
   {
@@ -20,6 +23,19 @@ const services = [
 ]
 
 export function Services() {
+  const listVariants: Variants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  }
+
+  const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.21, 0.47, 0.32, 0.98] } },
+  }
   return (
     <section id="services" className="py-20 md:py-32 bg-secondary/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -34,28 +50,33 @@ export function Services() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <motion.div
+          className="grid md:grid-cols-3 gap-8"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={listVariants}
+        >
           {services.map((service, index) => (
-            <Card
-              key={index}
-              className="group overflow-hidden border-border bg-card hover:shadow-xl transition-all duration-300"
-            >
-              <div className="aspect-[3/2] overflow-hidden">
-                <img
-                  src={service.image || "/placeholder.svg"}
-                  alt={service.title}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold text-foreground mb-2">{service.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
-              </CardContent>
-            </Card>
+            <motion.div key={index} variants={itemVariants}>
+              <Card className="group overflow-hidden border-border bg-card hover:shadow-xl transition-all duration-300">
+                <div className="aspect-[3/2] overflow-hidden">
+                  <img
+                    src={service.image || "/placeholder.svg"}
+                    alt={service.title}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-foreground mb-2">{service.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
+                </CardContent>
+              </Card>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   )

@@ -1,0 +1,62 @@
+/* [project]/Permanent-remote/app/premium-globals.css [app-client] (css) */
+:root {
+  --background: #0b0b0b;
+  --foreground: #f6f3f1;
+  --card: #0f0f0f;
+  --card-foreground: #efeae8;
+  --primary: #d4af37;
+  --primary-foreground: #0b0b0b;
+  --secondary: #e9c7b9;
+  --secondary-foreground: #0b0b0b;
+  --border: #ffffff0f;
+  --ring: #d4af3740;
+  --radius: .75rem;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-inter), system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: var(--foreground);
+    background-color: var(--background);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-cormorant), Georgia, "Times New Roman", serif;
+    color: var(--foreground);
+    letter-spacing: -.01em;
+    font-weight: 600;
+  }
+
+  header {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    background-color: #0b0b0b99;
+  }
+
+  .py-20 {
+    padding-top: 6.25rem !important;
+    padding-bottom: 6.25rem !important;
+  }
+
+  @media (min-width: 768px) {
+    .md\:py-32 {
+      padding-top: 10rem !important;
+      padding-bottom: 10rem !important;
+    }
+  }
+
+  .bg-primary {
+    background-color: var(--primary) !important;
+    color: var(--primary-foreground) !important;
+  }
+
+  .text-primary {
+    color: var(--primary) !important;
+  }
+
+  .bg-card {
+    background: linear-gradient(#ffffff05, #00000005);
+  }
+}
+
+/*# sourceMappingURL=Permanent-remote_app_premium-globals_css_bad6b30c._.single.css.map*/
