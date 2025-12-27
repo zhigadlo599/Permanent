@@ -134,7 +134,7 @@ export function Hero() {
               <Button
                 asChild
                 size="lg"
-                className="w-full sm:w-80 bg-pink-500/80 hover:bg-pink-500/90 text-white rounded-full px-8 py-6 text-xl sm:text-2xl font-medium shadow-xl no-scale backdrop-blur-sm"
+                className="w-full sm:w-80 bg-pink-500/80 hover:bg-pink-500/90 text-white rounded-full px-8 py-6 text-xl sm:text-2xl font-medium shadow-xl no-scale backdrop-blur-sm opacity-30"
               >
                 <Link
                   href="https://instagram.com/anna.permanent_zt"
