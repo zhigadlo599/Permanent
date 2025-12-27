@@ -17,26 +17,53 @@ export function Hero() {
   useEffect(() => {
     const videos = Array.from(document.querySelectorAll<HTMLVideoElement>(".hero-video"))
     const listeners: Array<() => void> = []
+
+    const tryPlayOnce = (v: HTMLVideoElement) => {
+      try {
+        // Ensure muted and inline attributes for mobile autoplay
+        v.muted = true
+        v.playsInline = true
+        try {
+          v.setAttribute("playsinline", "")
+          // some browsers respond to webkit attribute
+          v.setAttribute("webkit-playsinline", "")
+        } catch {}
+
+        const p = v.play()
+        if (p && typeof p.catch === "function") {
+          p.catch(() => {
+            // ignore, will attempt again on user interaction
+          })
+        }
+      } catch {}
+    }
+
     videos.forEach((v) => {
-      v.muted = true
-      const tryPlay = () => {
-        v.play().catch(() => {
-          /* ignore */
-        })
-      }
-      listeners.push(tryPlay)
+      const handler = () => tryPlayOnce(v)
+      listeners.push(handler)
       if (v.readyState >= 2) {
-        tryPlay()
+        handler()
       } else {
-        v.addEventListener("loadeddata", tryPlay, { once: true })
+        v.addEventListener("loadeddata", handler, { once: true })
       }
     })
+
+    // Fallback: attempt to play on first user touch (common mobile restriction)
+    const touchHandler = () => {
+      videos.forEach((v) => tryPlayOnce(v))
+      document.removeEventListener("touchstart", touchHandler)
+    }
+    document.addEventListener("touchstart", touchHandler, { once: true })
+
     return () => {
       videos.forEach((v, i) => {
         try {
           v.removeEventListener("loadeddata", listeners[i])
         } catch {}
       })
+      try {
+        document.removeEventListener("touchstart", touchHandler)
+      } catch {}
     }
   }, [])
 
