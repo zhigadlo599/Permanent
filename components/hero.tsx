@@ -4,7 +4,6 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Instagram } from "lucide-react"
 import { useEffect, useState } from "react"
-import { Reveal } from "@/components/ScrollReveal"
 
 export function Hero() {
   const [isVisible, setIsVisible] = useState(false)
@@ -106,7 +105,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60 pointer-events-none" />
       </div>
 
-      <Reveal>
+      <div>
         <div
           className={`relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full text-center ${
             isVisible
@@ -196,7 +195,7 @@ export function Hero() {
             </div>
           </div>
         </div>
-      </Reveal>
+      </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
