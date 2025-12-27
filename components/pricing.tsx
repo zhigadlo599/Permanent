@@ -82,11 +82,11 @@ export function Pricing() {
                 </div>
               )}
               <CardHeader className="text-center pb-2 pt-8">
-                <h3 className="text-xl font-semibold text-foreground">{plan.name}</h3>
-                <p className="text-muted-foreground text-sm">{plan.description}</p>
-                <div className="mt-4">
-                  <span className="text-5xl font-bold text-foreground">{plan.price}</span>
-                  <span className="text-muted-foreground ml-1">грн</span>
+                <h3 className="text-xl md:text-2xl font-semibold text-foreground">{plan.name}</h3>
+                <p className="text-muted-foreground text-sm italic">{plan.description}</p>
+                <div className="mt-4 flex items-baseline justify-center gap-2">
+                  <span className="text-6xl md:text-5xl font-extrabold text-foreground leading-none">{plan.price}</span>
+                  <span className="text-sm md:text-base text-muted-foreground">грн</span>
                 </div>
               </CardHeader>
               <CardContent className="pt-6">
