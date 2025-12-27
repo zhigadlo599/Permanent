@@ -8,7 +8,6 @@ import { Reveal } from "@/components/ScrollReveal"
 
 export function Hero() {
   const [isVisible, setIsVisible] = useState(false)
-  const [autoplayBlocked, setAutoplayBlocked] = useState(false)
 
   useEffect(() => {
     setIsVisible(true)
@@ -38,22 +37,12 @@ export function Hero() {
         } catch {}
 
         const p = v.play()
-        if (p && typeof p.then === "function") {
-          p.then(() => {
-            try {
-              setAutoplayBlocked(false)
-            } catch {}
-          }).catch(() => {
-            try {
-              setAutoplayBlocked(true)
-            } catch {}
+        if (p && typeof p.catch === "function") {
+          p.catch(() => {
             // If autoplay is blocked, attempt again on the next user interaction
             const onUserGesture = () => {
               try {
                 v.play().catch(() => {})
-              } catch {}
-              try {
-                setAutoplayBlocked(false)
               } catch {}
               document.removeEventListener("click", onUserGesture)
               document.removeEventListener("touchstart", onUserGesture)
@@ -129,30 +118,7 @@ export function Hero() {
         >
           <source src="/hero-background.mp4" type="video/mp4" />
         </video>
-        {/* Overlay shown when autoplay is blocked — prompts user to tap to start videos */}
-        {autoplayBlocked && (
-          <div
-            className="absolute inset-0 z-40 flex items-center justify-center"
-            aria-hidden={false}
-          >
-            <button
-              onClick={() => {
-                const vids = Array.from(document.querySelectorAll<HTMLVideoElement>(".hero-video"))
-                vids.forEach((vv) => {
-                  try {
-                    vv.play().catch(() => {})
-                  } catch {}
-                })
-                try {
-                  setAutoplayBlocked(false)
-                } catch {}
-              }}
-              className="bg-black/40 text-white px-6 py-3 rounded-full backdrop-blur-sm"
-            >
-              Натисніть щоб увімкнути фон
-            </button>
-          </div>
-        )}
+        {/* No overlay; rely on silent video and autoplay attempts */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50" />
       </div>
 
