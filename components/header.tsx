@@ -1,13 +1,12 @@
  "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import Link from "next/link"
 import { Instagram, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
 
   const navItems = [
     { label: "Послуги", href: "#services" },
@@ -15,24 +14,8 @@ export function Header() {
     { label: "Галерея", href: "#gallery" },
     { label: "Контакти", href: "#contact" },
   ]
-
-  useEffect(() => {
-    const onScroll = () => {
-      try {
-        setIsScrolled(window.scrollY > 20)
-      } catch {}
-    }
-    onScroll()
-    window.addEventListener("scroll", onScroll, { passive: true })
-    return () => window.removeEventListener("scroll", onScroll)
-  }, [])
-
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
-        isScrolled ? "bg-transparent backdrop-blur-none border-transparent" : "bg-background/80 backdrop-blur-md border-b border-border"
-      }`}
-    >
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link href="/" className="text-2xl md:text-3xl font-semibold tracking-wide text-foreground">
