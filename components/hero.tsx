@@ -143,13 +143,7 @@ export function Hero() {
               Професійний перманентний макіяж брів, губ та стрілок у Житомирі
             </p>
 
-            <div
-              className={`flex flex-col sm:flex-row gap-4 justify-center sm:transition-all sm:duration-1000 sm:delay-700 ${
-                isVisible
-                  ? "sm:opacity-100 sm:translate-y-0 opacity-100 translate-y-0"
-                  : "sm:opacity-0 sm:translate-y-4 opacity-100 translate-y-0"
-              }`}
-            >
+            <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-100 translate-y-0">
               <Button
                 asChild
                 size="lg"
