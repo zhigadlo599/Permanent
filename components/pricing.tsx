@@ -1,8 +1,9 @@
-"use client"
+ "use client"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Check, Star, Instagram } from "lucide-react"
+import { motion } from "framer-motion"
 
 const pricingPlans = [
   {
@@ -60,14 +61,20 @@ export function Pricing() {
 
         <div className="grid md:grid-cols-3 gap-8 items-start">
           {pricingPlans.map((plan, index) => (
-            <Card
+            <motion.div
               key={index}
-              className={`relative overflow-hidden transition-all duration-300 hover:shadow-xl ${
-                plan.popular
-                  ? "border-primary border-2 scale-105 shadow-lg bg-gradient-to-b from-primary/5 to-transparent"
-                  : "border-border bg-card"
-              }`}
+              initial={{ opacity: 0, x: 80 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: index * 0.12, ease: [0.21, 0.47, 0.32, 0.98] }}
             >
+              <Card
+                className={`relative overflow-hidden transition-all duration-300 hover:shadow-xl ${
+                  plan.popular
+                    ? "border-primary border-2 scale-105 shadow-lg bg-gradient-to-b from-primary/5 to-transparent"
+                    : "border-border bg-card"
+                }`}
+              >
               {plan.popular && (
                 <div className="absolute top-0 right-0 bg-primary text-primary-foreground px-4 py-1 text-sm font-medium rounded-bl-lg flex items-center gap-1">
                   <Star className="w-3 h-3 fill-current" />
@@ -105,7 +112,8 @@ export function Pricing() {
                   </a>
                 </Button>
               </CardContent>
-            </Card>
+              </Card>
+            </motion.div>
           ))}
         </div>
       </div>
