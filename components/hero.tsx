@@ -87,6 +87,7 @@ export function Hero() {
           muted
           loop
           playsInline
+          fetchPriority="high"
           onCanPlay={() => setVideoLoaded(true)}
         >
           <source src="/hero-background.mp4" type="video/mp4" />
@@ -98,6 +99,7 @@ export function Hero() {
           muted
           loop
           playsInline
+          fetchPriority="high"
           onCanPlay={() => setVideoLoaded(true)}
         >
           <source src="/hero-background.mp4" type="video/mp4" />
@@ -163,7 +165,7 @@ export function Hero() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="w-full sm:w-80 rounded-full px-8 py-6 text-xl sm:text-2xl border-2 border-border text-foreground hover:bg-white/10 bg-transparent backdrop-blur-sm"
+                className="w-full sm:w-80 rounded-full px-8 py-6 text-xl sm:text-2xl border-2 border-border text-white hover:bg-white/10 bg-transparent backdrop-blur-sm"
               >
                 <Link href="#services" className="flex items-center justify-center">
                   Дізнатися більше

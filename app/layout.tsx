@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="uk" className="overflow-x-hidden">
       <head>
-        <link rel="preload" as="video" href="/hero-background.mp4" />
+        <link rel="preload" as="video" href="/hero-background.mp4" type="video/mp4" fetchPriority="high" />
       </head>
       <body className={`${cormorant.variable} ${inter.variable} font-sans antialiased overflow-x-hidden bg-black`}>
         {children}
