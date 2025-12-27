@@ -57,6 +57,10 @@ export function Hero() {
     videos.forEach((v) => {
       const handler = () => tryPlayOnce(v)
       listeners.push(handler)
+      // Try immediately (increase chance to autoplay on load)
+      try {
+        tryPlayOnce(v)
+      } catch {}
       if (v.readyState >= 2) {
         handler()
       } else {
