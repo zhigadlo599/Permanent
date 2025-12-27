@@ -80,8 +80,6 @@ export function Hero() {
           muted
           loop
           playsInline
-          playsinline=""
-          webkit-playsinline=""
         >
           <source src="/hero-background.mp4" type="video/mp4" />
         </video>
@@ -92,8 +90,6 @@ export function Hero() {
           muted
           loop
           playsInline
-          playsinline=""
-          webkit-playsinline=""
         >
           <source src="/hero-background.mp4" type="video/mp4" />
         </video>
