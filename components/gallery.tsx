@@ -1,8 +1,9 @@
-"use client"
+ "use client"
 
 import { useState } from "react"
 import { X } from "lucide-react"
 import { BeforeAfterSlider } from "./before-after-slider"
+import { motion } from "framer-motion"
 
 const beforeAfterImages = [
   {
@@ -50,10 +51,17 @@ export function Gallery() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {beforeAfterImages.map((item, index) => (
-              <div key={index} className="space-y-3">
+              <motion.div
+                key={index}
+                className="space-y-3"
+                initial={{ opacity: 0, x: 80 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.6, delay: index * 0.08, ease: [0.21, 0.47, 0.32, 0.98] }}
+              >
                 <BeforeAfterSlider beforeImage={item.before} afterImage={item.after} />
                 <p className="text-center text-lg font-medium text-foreground">{item.title}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -64,19 +72,26 @@ export function Gallery() {
         </h3>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {galleryImages.map((image, index) => (
-            <button
+            <motion.div
               key={index}
-              onClick={() => setSelectedImage(image.src)}
-              className="aspect-square overflow-hidden rounded-2xl group cursor-pointer"
+              initial={{ opacity: 0, x: 80 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, delay: index * 0.06, ease: [0.21, 0.47, 0.32, 0.98] }}
             >
-              <img
-                src={image.src || "/placeholder.svg"}
-                alt={image.alt}
-                loading="lazy"
-                decoding="async"
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-            </button>
+              <button
+                onClick={() => setSelectedImage(image.src)}
+                className="aspect-square overflow-hidden rounded-2xl group cursor-pointer"
+              >
+                <img
+                  src={image.src || "/placeholder.svg"}
+                  alt={image.alt}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </button>
+            </motion.div>
           ))}
         </div>
 
