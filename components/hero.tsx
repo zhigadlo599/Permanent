@@ -7,7 +7,6 @@ import { useEffect, useState } from "react"
 
 export function Hero() {
   const [isVisible, setIsVisible] = useState(false)
-  const [videoLoaded, setVideoLoaded] = useState(false)
 
   useEffect(() => {
     setIsVisible(true)
@@ -81,26 +80,24 @@ export function Hero() {
       {/* Background: static image on small devices, video on larger screens */}
       <div className="absolute inset-0 overflow-hidden bg-background">
         <video
-          className={`hero-video sm:hidden absolute inset-0 w-full h-full object-cover z-0 pointer-events-none transition-opacity duration-700 ${videoLoaded ? "opacity-100" : "opacity-0"}`}
+          className="hero-video sm:hidden absolute inset-0 w-full h-full object-cover z-0 pointer-events-none opacity-100"
           preload="auto"
           autoPlay
           muted
           loop
           playsInline
           fetchPriority="high"
-          onCanPlay={() => setVideoLoaded(true)}
         >
           <source src="/hero-background.mp4" type="video/mp4" />
         </video>
         <video
-          className={`hero-video hidden sm:block absolute inset-0 w-full h-full object-cover z-0 pointer-events-none transition-opacity duration-700 ${videoLoaded ? "opacity-100" : "opacity-0"}`}
+          className="hero-video hidden sm:block absolute inset-0 w-full h-full object-cover z-0 pointer-events-none opacity-100"
           preload="auto"
           autoPlay
           muted
           loop
           playsInline
           fetchPriority="high"
-          onCanPlay={() => setVideoLoaded(true)}
         >
           <source src="/hero-background.mp4" type="video/mp4" />
         </video>
