@@ -17,7 +17,7 @@ export function About() {
           <div className="relative">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="/anna-permanent-makeup-artist-instagram-photo.jpg"
+                src="/anna-permanent-makeup-artist-instagram-photo-max.jpg"
                 alt="Анна - майстер перманентного макіяжу"
                 className="w-full h-full object-cover"
               />

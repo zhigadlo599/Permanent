@@ -766,12 +766,12 @@ const services = [
     {
         title: "Перманент брів",
         description: "Пудрові брови, мікроблейдинг, комбінована техніка. Природний результат, який підкреслить вашу красу.",
-        image: "/young-model-perfect-eyebrows-permanent-makeup.jpg"
+        image: "/woman-perfect-eyebrows-after-permanent-makeup-beau.jpg"
     },
     {
         title: "Перманент губ",
         description: "Акварельна техніка, контур з розтушовкою. Соковиті губи з ефектом природного сяйва.",
-        image: "/young-model-beautiful-lips-permanent-makeup.jpg"
+        image: "/young-woman-beautiful-natural-pink-lips-close-up-p.jpg"
     },
     {
         title: "Перманент стрілок",
