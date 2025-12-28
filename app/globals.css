@@ -182,4 +182,10 @@
   section.relative.min-h-screen h3 {
     font-weight: 400 !important;
   }
+  /* Fix video loading to prevent flickering */
+  .hero-video {
+    opacity: 1 !important;
+    transition: none !important;
+    will-change: auto !important;
+  }
 }

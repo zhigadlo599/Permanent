@@ -78,30 +78,32 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center">
       {/* Background: static image on small devices, video on larger screens */}
-      <div className="absolute inset-0 overflow-hidden bg-background">
+      <div className="absolute inset-0 overflow-hidden bg-black">
         <video
-          className="hero-video sm:hidden absolute inset-0 w-full h-full object-cover z-0 pointer-events-none opacity-100"
+          className="hero-video sm:hidden absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
           preload="auto"
           autoPlay
           muted
           loop
           playsInline
           fetchPriority="high"
+          style={{ opacity: 1 }}
         >
           <source src="/hero-background.mp4" type="video/mp4" />
         </video>
         <video
-          className="hero-video hidden sm:block absolute inset-0 w-full h-full object-cover z-0 pointer-events-none opacity-100"
+          className="hero-video hidden sm:block absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
           preload="auto"
           autoPlay
           muted
           loop
           playsInline
           fetchPriority="high"
+          style={{ opacity: 1 }}
         >
           <source src="/hero-background.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50 pointer-events-none z-10" />
       </div>
 
       <div>
