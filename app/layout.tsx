@@ -8,13 +8,15 @@ const cormorant = Cormorant_Garamond({
   subsets: ["latin", "cyrillic"],
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-cormorant",
-  display: "swap",
+  display: "optional",
+  preload: true,
 })
 
 const inter = Inter({
   subsets: ["latin", "cyrillic"],
   variable: "--font-inter",
-  display: "swap",
+  display: "optional",
+  preload: true,
 })
 
 export const metadata: Metadata = {
@@ -35,6 +37,8 @@ export default function RootLayout({
         <link rel="preload" as="video" href="/hero-background.mp4" type="video/mp4" fetchPriority="high" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
       </head>
       <body className={`${cormorant.variable} ${inter.variable} font-sans antialiased overflow-x-hidden bg-black`}>
         {children}
