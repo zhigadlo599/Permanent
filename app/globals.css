@@ -169,7 +169,9 @@
   }
   /* Make base text slightly bolder for readability */
   body, p, li {
-    font-weight: 500 !important;
+    font-weight: 400 !important;
+    font-family: var(--font-cormorant), 'Cormorant Garamond', 'Georgia', serif !important;
+    font-synthesis: none !important;
   }
   /* Fix header text weight to prevent FOUT (Flash of Unstyled Text) */
   header, header *, header a, header button, header span {
