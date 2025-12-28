@@ -119,6 +119,7 @@ export function Hero() {
                   ? "sm:opacity-100 sm:translate-y-0 opacity-100 translate-y-0"
                   : "sm:opacity-0 sm:translate-y-4 opacity-100 translate-y-0"
               }`}
+              style={{ fontWeight: 400 }}
             >
               Студія перманентного макіяжу
             </p>
@@ -128,9 +129,10 @@ export function Hero() {
                   ? "sm:opacity-100 sm:translate-y-0 opacity-100 translate-y-0"
                   : "sm:opacity-0 sm:translate-y-4 opacity-100 translate-y-0"
               }`}
+              style={{ fontWeight: 400 }}
             >
               Підкресли свою
-              <span className="block font-normal italic text-rose-200">природну красу</span>
+              <span className="block font-normal italic text-rose-200" style={{ fontWeight: 400 }}>природну красу</span>
             </h1>
             <p
               className={`text-2xl sm:text-2xl md:text-3xl text-white/80 max-w-2xl mb-10 leading-relaxed sm:transition-all sm:duration-1000 sm:delay-500 ${
@@ -138,6 +140,7 @@ export function Hero() {
                   ? "sm:opacity-100 sm:translate-y-0 opacity-100 translate-y-0"
                   : "sm:opacity-0 sm:translate-y-4 opacity-100 translate-y-0"
               }`}
+              style={{ fontWeight: 400 }}
             >
               Професійний перманентний макіяж брів, губ та стрілок у Житомирі
             </p>
@@ -146,7 +149,7 @@ export function Hero() {
               <Button
                 asChild
                 size="lg"
-                className="w-full sm:w-80 bg-pink-500/80 hover:bg-pink-500/90 text-white rounded-full px-8 py-6 text-xl sm:text-2xl font-medium shadow-xl no-scale backdrop-blur-sm opacity-70"
+                className="w-full sm:w-80 bg-pink-500 hover:bg-pink-600 text-white rounded-full px-8 py-6 text-xl sm:text-2xl font-medium shadow-xl no-scale backdrop-blur-sm"
               >
                 <Link
                   href="https://instagram.com/anna.permanent_zt"

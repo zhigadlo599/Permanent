@@ -175,4 +175,11 @@
   header a, header button {
     font-weight: 400 !important;
   }
+  /* Fix hero section text weight to prevent FOUT on mobile */
+  section.relative.min-h-screen p,
+  section.relative.min-h-screen h1,
+  section.relative.min-h-screen h2,
+  section.relative.min-h-screen h3 {
+    font-weight: 400 !important;
+  }
 }
