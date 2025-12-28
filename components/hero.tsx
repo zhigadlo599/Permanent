@@ -106,9 +106,7 @@ export function Hero() {
         >
           <source src="/hero-background.mp4" type="video/mp4" />
         </video>
-        {videoReady && (
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50 pointer-events-none z-5" />
-        )}
+        {/* No overlay: ensure video displays without additional block after ready */}
       </div>
 
       <div>
