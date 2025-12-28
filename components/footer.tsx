@@ -65,8 +65,8 @@ export function Footer() {
         </div>
 
         <div className="border-t border-background/20 pt-8 text-center text-background/50 text-sm">
-          <p className="flex items-center justify-center gap-1">
-            © 2025 Anna Permanent. Створено з <Heart className="w-4 h-4 text-primary fill-primary" /> у Житомирі
+          <p className="flex flex-wrap items-center justify-center gap-1">
+            © 2025 Anna Permanent. Створено з <Heart className="w-4 h-4 text-primary fill-primary inline-block" /> у Житомирі
           </p>
         </div>
       </div>
