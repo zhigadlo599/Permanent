@@ -1,10 +1,9 @@
-'use client';
+ 'use client';
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Instagram } from "lucide-react"
 import { useEffect, useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
 
 export function Hero() {
   const [isVisible, setIsVisible] = useState(false)
@@ -80,24 +79,8 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center">
       {/* Background: static image on small devices, video on larger screens */}
-      <div className="absolute inset-0 overflow-hidden bg-transparent" style={{minHeight: '100vh', aspectRatio: '16/9'}}>
-        {/* Skeleton / poster shown until video is ready */}
-        <AnimatePresence>
-          {!videoReady && (
-            <motion.div
-              key="skeleton"
-              className="absolute inset-0 z-20 bg-black flex items-center justify-center"
-              initial={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.45 }}
-            >
-              {/* simple skeleton center */}
-              <div className="w-28 h-28 rounded-full bg-gray-800 animate-pulse" />
-            </motion.div>
-          )}
-        </AnimatePresence>
-
-        <motion.video
+      <div className="absolute inset-0 overflow-hidden bg-transparent">
+        <video
           className="hero-video sm:hidden absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
           preload="auto"
           autoPlay
@@ -105,18 +88,12 @@ export function Hero() {
           loop
           playsInline
           fetchPriority="high"
-          poster="/hero-poster.jpg"
-          width={1920}
-          height={1080}
-          initial={{ opacity: 0 }}
-          animate={videoReady ? { opacity: 1 } : { opacity: 0 }}
-          transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
           onCanPlay={() => setVideoReady(true)}
+          style={{ opacity: videoReady ? 1 : 0 }}
         >
           <source src="/hero-background.mp4" type="video/mp4" />
-        </motion.video>
-
-        <motion.video
+        </video>
+        <video
           className="hero-video hidden sm:block absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
           preload="auto"
           autoPlay
@@ -124,19 +101,13 @@ export function Hero() {
           loop
           playsInline
           fetchPriority="high"
-          poster="/hero-poster.jpg"
-          width={1920}
-          height={1080}
-          initial={{ opacity: 0 }}
-          animate={videoReady ? { opacity: 1 } : { opacity: 0 }}
-          transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
           onCanPlay={() => setVideoReady(true)}
+          style={{ opacity: videoReady ? 1 : 0 }}
         >
           <source src="/hero-background.mp4" type="video/mp4" />
-        </motion.video>
-
+        </video>
         {videoReady && (
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50 pointer-events-none z-10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50 pointer-events-none z-5" />
         )}
       </div>
 
