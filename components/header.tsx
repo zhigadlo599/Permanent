@@ -18,7 +18,7 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <Link href="/" className="text-2xl md:text-3xl font-normal tracking-wide text-foreground">
+          <Link href="/" className="text-2xl md:text-3xl font-normal tracking-wide text-foreground" style={{ fontWeight: 400 }}>
             Anna<span className="text-primary">.</span>permanent
           </Link>
 
@@ -29,6 +29,7 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 className="text-sm uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors"
+                style={{ fontWeight: 400 }}
               >
                 {item.label}
               </Link>
@@ -68,6 +69,7 @@ export function Header() {
                 href={item.href}
                 onClick={() => setIsOpen(false)}
                 className="text-sm uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors py-2"
+                style={{ fontWeight: 400 }}
               >
                 {item.label}
               </Link>

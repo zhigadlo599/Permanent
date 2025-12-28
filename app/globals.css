@@ -171,4 +171,8 @@
   body, p, li {
     font-weight: 500 !important;
   }
+  /* Fix header text weight to prevent FOUT (Flash of Unstyled Text) */
+  header a, header button {
+    font-weight: 400 !important;
+  }
 }
