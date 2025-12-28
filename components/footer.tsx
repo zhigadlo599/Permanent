@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer className="bg-foreground text-background py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <Link href="/" className="text-2xl font-semibold tracking-wide mb-4 block">
               Anna<span className="text-primary">.</span>permanent
@@ -48,6 +48,17 @@ export function Footer() {
               <li className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
                 <span>Житомир, вул. Михайлівська 55</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold mb-4">Правова інформація</h3>
+            <ul className="space-y-2 text-background/70 text-sm">
+              <li>
+                <Link href="/privacy" className="hover:text-background transition-colors">
+                  Політика та Умови
+                </Link>
               </li>
             </ul>
           </div>
