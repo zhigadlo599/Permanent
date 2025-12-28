@@ -5,6 +5,21 @@ import { Button } from "@/components/ui/button"
 import { Instagram } from "lucide-react"
 import { useEffect, useState } from "react"
 
+// Хук для визначення ширини екрана
+function useMediaQuery(query: string): boolean {
+  const [matches, setMatches] = useState(false)
+  useEffect(() => {
+    const media = window.matchMedia(query)
+    if (media.matches !== matches) {
+      setMatches(media.matches)
+    }
+    const listener = () => setMatches(media.matches)
+    media.addEventListener('change', listener)
+    return () => media.removeEventListener('change', listener)
+  }, [matches, query])
+  return matches
+}
+
 export function Hero() {
   const [isVisible, setIsVisible] = useState(false)
   const [videoReady, setVideoReady] = useState(false)
@@ -14,74 +29,32 @@ export function Hero() {
   }, [])
 
   // Try to force-play background videos on mobile if blocked
+  // Визначаємо, мобільний чи десктоп
+  const isDesktop = useMediaQuery('(min-width: 640px)')
   useEffect(() => {
-    const videos = Array.from(document.querySelectorAll<HTMLVideoElement>(".hero-video"))
-    const listeners: Array<() => void> = []
-
-        const tryPlayOnce = (v: HTMLVideoElement) => {
-      try {
-        // Ensure muted and inline attributes for mobile autoplay
-        v.muted = true
-            v.defaultMuted = true
-        v.playsInline = true
-        try {
-          v.setAttribute("playsinline", "")
-          // some browsers respond to webkit attribute
-          v.setAttribute("webkit-playsinline", "")
-          v.setAttribute("muted", "")
-        } catch {}
-
-        try {
-          // Ensure the media is requested to load immediately
-          v.load()
-        } catch {}
-
-        const p = v.play()
-        if (p && typeof p.catch === "function") {
-          // swallow play rejection; no user-interaction fallback per request
-          p.catch(() => {})
-        }
-      } catch {}
-    }
-
-    videos.forEach((v) => {
-      const handler = () => tryPlayOnce(v)
-      listeners.push(handler)
-      // Try immediately (increase chance to autoplay on load)
-      try {
-        tryPlayOnce(v)
-      } catch {}
-      if (v.readyState >= 2) {
-        handler()
-      } else {
-        v.addEventListener("loadeddata", handler, { once: true })
+    const video = document.querySelector<HTMLVideoElement>(".hero-video")
+    if (!video) return
+    try {
+      video.muted = true
+      video.defaultMuted = true
+      video.playsInline = true
+      video.setAttribute("playsinline", "")
+      video.setAttribute("webkit-playsinline", "")
+      video.setAttribute("muted", "")
+      video.load()
+      const p = video.play()
+      if (p && typeof p.catch === "function") {
+        p.catch(() => {})
       }
-    })
-
-    // Also attempt to play on window load (helps for some mobile browsers)
-    const onLoad = () => videos.forEach((v) => tryPlayOnce(v))
-    window.addEventListener("load", onLoad, { once: true })
-
-    // No interaction-based fallback: rely on silent video + load()/play() attempts on load
-
-    return () => {
-      videos.forEach((v, i) => {
-        try {
-          v.removeEventListener("loadeddata", listeners[i])
-        } catch {}
-      })
-      try {
-        window.removeEventListener("load", onLoad)
-      } catch {}
-    }
-  }, [])
+    } catch {}
+  }, [isDesktop])
 
   return (
     <section className="relative min-h-screen flex items-center justify-center">
       {/* Background: static image on small devices, video on larger screens */}
       <div className="absolute inset-0 overflow-hidden bg-transparent">
         <video
-          className="hero-video sm:hidden absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
+          className="hero-video absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
           preload="auto"
           autoPlay
           muted
@@ -89,12 +62,12 @@ export function Hero() {
           playsInline
           fetchPriority="high"
           onCanPlay={() => setVideoReady(true)}
-          style={{ opacity: videoReady ? 1 : 0 }}
+          style={{ opacity: videoReady ? 1 : 0, display: isDesktop ? 'block' : 'none' }}
         >
           <source src="/hero-background.mp4" type="video/mp4" />
         </video>
         <video
-          className="hero-video hidden sm:block absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
+          className="hero-video absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
           preload="auto"
           autoPlay
           muted
@@ -102,7 +75,7 @@ export function Hero() {
           playsInline
           fetchPriority="high"
           onCanPlay={() => setVideoReady(true)}
-          style={{ opacity: videoReady ? 1 : 0 }}
+          style={{ opacity: videoReady ? 1 : 0, display: isDesktop ? 'none' : 'block' }}
         >
           <source src="/hero-background.mp4" type="video/mp4" />
         </video>
