@@ -107,7 +107,7 @@ export function Hero() {
           <source src="/hero-background.mp4" type="video/mp4" />
         </video>
         {/* Overlay: darken video for better text visibility */}
-        <div className="absolute inset-0 bg-black/60 z-5 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-black/20 z-5 pointer-events-none"></div>
       </div>
 
       <div>
