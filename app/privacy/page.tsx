@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { Reveal } from "@/components/Reveal"
+import { ScrollReveal } from "@/components/ScrollReveal"
 
 export const metadata = {
   title: "Політика конфіденційності та Умови використання | Anna Permanent",
@@ -15,17 +15,17 @@ export default function PrivacyPage() {
       <section className="py-20 md:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Page Title */}
-          <Reveal>
+          <ScrollReveal>
             <div className="text-center mb-16">
               <p className="text-sm uppercase tracking-[0.3em] text-primary mb-4">Важливо знати</p>
               <h1 className="text-4xl md:text-5xl font-light text-foreground mb-4">
                 Політика конфіденційності <span className="font-semibold italic text-primary">та Умови</span>
               </h1>
             </div>
-          </Reveal>
+          </ScrollReveal>
 
           {/* Privacy Policy Section */}
-          <Reveal>
+          <ScrollReveal>
             <div className="mb-16">
               <h2 className="text-3xl font-light text-foreground mb-8">
                 Політика конфіденційності
@@ -101,12 +101,12 @@ export default function PrivacyPage() {
                 </div>
               </div>
             </div>
-          </Reveal>
+          </ScrollReveal>
 
           <hr className="my-16 border-border" />
 
           {/* Terms of Service Section */}
-          <Reveal>
+          <ScrollReveal>
             <div>
               <h2 className="text-3xl font-light text-foreground mb-8">
                 Умови використання
@@ -222,7 +222,7 @@ export default function PrivacyPage() {
                 </div>
               </div>
             </div>
-          </Reveal>
+          </ScrollReveal>
         </div>
       </section>
 
